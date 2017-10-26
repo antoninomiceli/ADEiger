@@ -3,10 +3,10 @@ beginScreenProperties
 major 4
 minor 0
 release 1
-x 2348
-y 194
-w 397
-h 982
+x 1319
+y 154
+w 399
+h 746
 font "arial-bold-r-12.0"
 ctlFont "arial-bold-r-12.0"
 btnFont "arial-bold-r-12.0"
@@ -32,7 +32,7 @@ major 4
 minor 1
 release 0
 x 280
-y 950
+y 715
 w 110
 h 25
 fgColor index 46
@@ -206,7 +206,7 @@ major 4
 minor 3
 release 0
 x 5
-y 950
+y 715
 w 125
 h 25
 fgColor index 43
@@ -249,7 +249,7 @@ release 0
 x 5
 y 365
 w 385
-h 575
+h 340
 lineColor index 14
 fill
 fillColor index 3
@@ -281,9 +281,9 @@ beginObjectProperties
 major 10
 minor 0
 release 0
-x 120
+x 130
 y 380
-w 185
+w 180
 h 20
 controlPv "$(P)$(R)Wavelength"
 fgColor index 25
@@ -301,44 +301,6 @@ minor 1
 release 1
 x 10
 y 380
-w 90
-h 20
-font "arial-bold-r-12.0"
-fgColor index 14
-bgColor index 3
-useDisplayBg
-value {
-  "Wavelength:"
-}
-endObjectProperties
-
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 1
-x 10
-y 405
-w 90
-h 20
-font "arial-bold-r-12.0"
-fgColor index 14
-bgColor index 3
-useDisplayBg
-value {
-  "Energy range:"
-}
-endObjectProperties
-
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 1
-x 10
-y 430
 w 115
 h 20
 font "arial-bold-r-12.0"
@@ -346,7 +308,7 @@ fgColor index 14
 bgColor index 3
 useDisplayBg
 value {
-  "Detector distance:"
+  "Wavelength:"
 }
 endObjectProperties
 
@@ -365,26 +327,7 @@ fgColor index 14
 bgColor index 3
 useDisplayBg
 value {
-  "Detector V_offset:"
-}
-endObjectProperties
-
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 1
-x 10
-y 480
-w 115
-h 20
-font "arial-bold-r-12.0"
-fgColor index 14
-bgColor index 3
-useDisplayBg
-value {
-  "Beam:"
+  "2Theta:"
 }
 endObjectProperties
 
@@ -396,139 +339,6 @@ minor 1
 release 1
 x 10
 y 505
-w 115
-h 20
-font "arial-bold-r-12.0"
-fgColor index 14
-bgColor index 3
-useDisplayBg
-value {
-  "Flux:"
-}
-endObjectProperties
-
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 1
-x 10
-y 530
-w 125
-h 20
-font "arial-bold-r-12.0"
-fgColor index 14
-bgColor index 3
-useDisplayBg
-value {
-  "Transmission:"
-}
-endObjectProperties
-
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 1
-x 10
-y 555
-w 115
-h 20
-font "arial-bold-r-12.0"
-fgColor index 14
-bgColor index 3
-useDisplayBg
-value {
-  "Start angle:"
-}
-endObjectProperties
-
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 1
-x 10
-y 580
-w 115
-h 20
-font "arial-bold-r-12.0"
-fgColor index 14
-bgColor index 3
-useDisplayBg
-value {
-  "Angle increment:"
-}
-endObjectProperties
-
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 1
-x 10
-y 605
-w 115
-h 20
-font "arial-bold-r-12.0"
-fgColor index 14
-bgColor index 3
-useDisplayBg
-value {
-  "Detector 2theta:"
-}
-endObjectProperties
-
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 1
-x 10
-y 630
-w 115
-h 20
-font "arial-bold-r-12.0"
-fgColor index 14
-bgColor index 3
-useDisplayBg
-value {
-  "Polarization:"
-}
-endObjectProperties
-
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 1
-x 10
-y 655
-w 115
-h 20
-font "arial-bold-r-12.0"
-fgColor index 14
-bgColor index 3
-useDisplayBg
-value {
-  "Alpha:"
-}
-endObjectProperties
-
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 1
-x 10
-y 680
 w 115
 h 20
 font "arial-bold-r-12.0"
@@ -547,7 +357,7 @@ major 4
 minor 1
 release 1
 x 10
-y 755
+y 605
 w 115
 h 20
 font "arial-bold-r-12.0"
@@ -566,7 +376,7 @@ major 4
 minor 1
 release 1
 x 10
-y 780
+y 630
 w 115
 h 20
 font "arial-bold-r-12.0"
@@ -584,120 +394,9 @@ beginObjectProperties
 major 4
 minor 1
 release 1
-x 10
-y 855
-w 115
-h 20
-font "arial-bold-r-12.0"
-fgColor index 14
-bgColor index 3
-useDisplayBg
-value {
-  "Oscillation axis:"
-}
-endObjectProperties
-
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 1
-x 10
-y 880
-w 150
-h 20
-font "arial-bold-r-12.0"
-fgColor index 14
-bgColor index 3
-useDisplayBg
-value {
-  "No. oscillations:"
-}
-endObjectProperties
-
-# (Textentry)
-object TextentryClass
-beginObjectProperties
-major 10
-minor 0
-release 0
-x 120
-y 405
-w 90
-h 20
-controlPv "$(P)$(R)EnergyLow"
-fgColor index 25
-fgAlarm
-bgColor index 3
-fill
-font "arial-bold-r-12.0"
-endObjectProperties
-
-# (Textentry)
-object TextentryClass
-beginObjectProperties
-major 10
-minor 0
-release 0
-x 215
-y 405
-w 90
-h 20
-controlPv "$(P)$(R)EnergyHigh"
-fgColor index 25
-fgAlarm
-bgColor index 3
-fill
-font "arial-bold-r-12.0"
-endObjectProperties
-
-# (Textentry)
-object TextentryClass
-beginObjectProperties
-major 10
-minor 0
-release 0
-x 120
-y 880
-w 90
-h 20
-controlPv "$(P)$(R)NumOscill"
-fgColor index 25
-fgAlarm
-bgColor index 3
-fill
-font "arial-bold-r-12.0"
-endObjectProperties
-
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 1
-x 210
-y 405
-w 10
-h 20
-font "arial-bold-r-14.0"
-fgColor index 14
-bgColor index 3
-useDisplayBg
-value {
-  ","
-}
-endObjectProperties
-
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 1
-x 340
+x 315
 y 380
-w 45
+w 70
 h 20
 font "arial-bold-r-12.0"
 fontAlign "right"
@@ -715,413 +414,91 @@ beginObjectProperties
 major 4
 minor 1
 release 1
-x 290
-y 405
-w 95
-h 20
-font "arial-bold-r-12.0"
-fontAlign "right"
-fgColor index 14
-bgColor index 3
-useDisplayBg
-value {
-  "eV(low,high)"
-}
-endObjectProperties
-
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 1
-x 340
-y 430
-w 45
-h 20
-font "arial-bold-r-12.0"
-fontAlign "right"
-fgColor index 14
-bgColor index 3
-useDisplayBg
-value {
-  "mm"
-}
-endObjectProperties
-
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 1
-x 340
-y 450
-w 45
-h 20
-font "arial-bold-r-12.0"
-fontAlign "right"
-fgColor index 14
-bgColor index 3
-useDisplayBg
-value {
-  "mm"
-}
-endObjectProperties
-
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 1
-x 280
-y 480
-w 105
-h 20
-font "arial-bold-r-12.0"
-fontAlign "right"
-fgColor index 14
-bgColor index 3
-useDisplayBg
-value {
-  "pixels (X,Y)"
-}
-endObjectProperties
-
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 1
-x 330
-y 505
-w 55
-h 20
-font "arial-bold-r-12.0"
-fontAlign "right"
-fgColor index 14
-bgColor index 3
-useDisplayBg
-value {
-  "ph/s"
-}
-endObjectProperties
-
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 1
-x 330
-y 555
-w 55
-h 20
-font "arial-bold-r-12.0"
-fontAlign "right"
-fgColor index 14
-bgColor index 3
-useDisplayBg
-value {
-  "deg"
-}
-endObjectProperties
-
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 1
-x 325
-y 580
-w 60
-h 20
-font "arial-bold-r-12.0"
-fontAlign "right"
-fgColor index 14
-bgColor index 3
-useDisplayBg
-value {
-  "deg"
-}
-endObjectProperties
-
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 1
-x 330
-y 605
-w 55
-h 20
-font "arial-bold-r-12.0"
-fontAlign "right"
-fgColor index 14
-bgColor index 3
-useDisplayBg
-value {
-  "deg"
-}
-endObjectProperties
-
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 1
-x 330
-y 655
-w 55
-h 20
-font "arial-bold-r-12.0"
-fontAlign "right"
-fgColor index 14
-bgColor index 3
-useDisplayBg
-value {
-  "deg"
-}
-endObjectProperties
-
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 1
-x 330
-y 680
-w 55
-h 20
-font "arial-bold-r-12.0"
-fontAlign "right"
-fgColor index 14
-bgColor index 3
-useDisplayBg
-value {
-  "deg"
-}
-endObjectProperties
-
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 1
-x 330
-y 755
-w 55
-h 20
-font "arial-bold-r-12.0"
-fontAlign "right"
-fgColor index 14
-bgColor index 3
-useDisplayBg
-value {
-  "deg"
-}
-endObjectProperties
-
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 1
-x 330
-y 780
-w 55
-h 20
-font "arial-bold-r-12.0"
-fontAlign "right"
-fgColor index 14
-bgColor index 3
-useDisplayBg
-value {
-  "deg"
-}
-endObjectProperties
-
-# (Textentry)
-object TextentryClass
-beginObjectProperties
-major 10
-minor 0
-release 0
-x 120
-y 430
-w 90
-h 20
-controlPv "$(P)$(R)DetDist"
-fgColor index 25
-fgAlarm
-bgColor index 3
-fill
-font "arial-bold-r-12.0"
-endObjectProperties
-
-# (Textentry)
-object TextentryClass
-beginObjectProperties
-major 10
-minor 0
-release 0
-x 120
+x 315
 y 455
-w 90
+w 70
 h 20
-controlPv "$(P)$(R)DetVOffset"
-fgColor index 25
-fgAlarm
-bgColor index 3
-fill
 font "arial-bold-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "deg"
+}
 endObjectProperties
 
-# (Textentry)
-object TextentryClass
+# (Static Text)
+object activeXTextClass
 beginObjectProperties
-major 10
-minor 0
-release 0
-x 120
-y 480
-w 90
-h 20
-controlPv "$(P)$(R)BeamX"
-fgColor index 25
-fgAlarm
-bgColor index 3
-fill
-font "arial-bold-r-12.0"
-endObjectProperties
-
-# (Textentry)
-object TextentryClass
-beginObjectProperties
-major 10
-minor 0
-release 0
-x 215
-y 480
-w 90
-h 20
-controlPv "$(P)$(R)BeamY"
-fgColor index 25
-fgAlarm
-bgColor index 3
-fill
-font "arial-bold-r-12.0"
-endObjectProperties
-
-# (Textentry)
-object TextentryClass
-beginObjectProperties
-major 10
-minor 0
-release 0
-x 120
+major 4
+minor 1
+release 1
+x 315
 y 505
-w 90
+w 70
 h 20
-controlPv "$(P)$(R)Flux"
-fgColor index 25
-fgAlarm
-bgColor index 3
-fill
 font "arial-bold-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "deg"
+}
 endObjectProperties
 
-# (Textentry)
-object TextentryClass
+# (Static Text)
+object activeXTextClass
 beginObjectProperties
-major 10
-minor 0
-release 0
-x 120
-y 530
-w 90
-h 20
-controlPv "$(P)$(R)FilterTransm"
-fgColor index 25
-fgAlarm
-bgColor index 3
-fill
-font "arial-bold-r-12.0"
-endObjectProperties
-
-# (Textentry)
-object TextentryClass
-beginObjectProperties
-major 10
-minor 0
-release 0
-x 120
-y 555
-w 90
-h 20
-controlPv "$(P)$(R)StartAngle"
-fgColor index 25
-fgAlarm
-bgColor index 3
-fill
-font "arial-bold-r-12.0"
-endObjectProperties
-
-# (Textentry)
-object TextentryClass
-beginObjectProperties
-major 10
-minor 0
-release 0
-x 120
-y 580
-w 90
-h 20
-controlPv "$(P)$(R)AngleIncr"
-fgColor index 25
-fgAlarm
-bgColor index 3
-fill
-font "arial-bold-r-12.0"
-endObjectProperties
-
-# (Textentry)
-object TextentryClass
-beginObjectProperties
-major 10
-minor 0
-release 0
-x 120
+major 4
+minor 1
+release 1
+x 315
 y 605
-w 90
+w 70
 h 20
-controlPv "$(P)$(R)Det2thetaStart"
-fgColor index 25
-fgAlarm
-bgColor index 3
-fill
 font "arial-bold-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "deg"
+}
 endObjectProperties
 
-# (Textentry)
-object TextentryClass
+# (Static Text)
+object activeXTextClass
 beginObjectProperties
-major 10
-minor 0
-release 0
-x 120
+major 4
+minor 1
+release 1
+x 315
 y 630
-w 90
+w 70
 h 20
-controlPv "$(P)$(R)Polarization"
+font "arial-bold-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "deg"
+}
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 130
+y 455
+w 180
+h 20
+controlPv "$(P)$(R)TwoThetaStart"
 fgColor index 25
 fgAlarm
 bgColor index 3
@@ -1135,27 +512,9 @@ beginObjectProperties
 major 10
 minor 0
 release 0
-x 120
-y 655
-w 90
-h 20
-controlPv "$(P)$(R)Alpha"
-fgColor index 25
-fgAlarm
-bgColor index 3
-fill
-font "arial-bold-r-12.0"
-endObjectProperties
-
-# (Textentry)
-object TextentryClass
-beginObjectProperties
-major 10
-minor 0
-release 0
-x 120
-y 680
-w 90
+x 130
+y 505
+w 180
 h 20
 controlPv "$(P)$(R)KappaStart"
 fgColor index 25
@@ -1171,9 +530,9 @@ beginObjectProperties
 major 10
 minor 0
 release 0
-x 120
-y 755
-w 90
+x 130
+y 605
+w 180
 h 20
 controlPv "$(P)$(R)ChiStart"
 fgColor index 25
@@ -1189,9 +548,9 @@ beginObjectProperties
 major 10
 minor 0
 release 0
-x 120
-y 780
-w 90
+x 130
+y 630
+w 180
 h 20
 controlPv "$(P)$(R)ChiIncr"
 fgColor index 25
@@ -1201,43 +560,6 @@ fill
 font "arial-bold-r-12.0"
 endObjectProperties
 
-# (Textentry)
-object TextentryClass
-beginObjectProperties
-major 10
-minor 0
-release 0
-x 120
-y 855
-w 90
-h 20
-controlPv "$(P)$(R)OscillAxis"
-fgColor index 25
-fgAlarm
-bgColor index 3
-fill
-font "arial-bold-r-12.0"
-endObjectProperties
-
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 1
-x 210
-y 480
-w 10
-h 20
-font "arial-bold-r-14.0"
-fgColor index 14
-bgColor index 3
-useDisplayBg
-value {
-  ","
-}
-endObjectProperties
-
 # (Static Text)
 object activeXTextClass
 beginObjectProperties
@@ -1245,44 +567,7 @@ major 4
 minor 1
 release 1
 x 10
-y 905
-w 150
-h 20
-font "arial-bold-r-12.0"
-fgColor index 14
-bgColor index 3
-useDisplayBg
-value {
-  "CBF Template File:"
-}
-endObjectProperties
-
-# (Textentry)
-object TextentryClass
-beginObjectProperties
-major 10
-minor 0
-release 0
-x 125
-y 905
-w 260
-h 20
-controlPv "$(P)$(R)CbfTemplateFile"
-fgColor index 25
-fgAlarm
-bgColor index 3
-fill
-font "arial-bold-r-12.0"
-endObjectProperties
-
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 1
-x 10
-y 705
+y 555
 w 115
 h 20
 font "arial-bold-r-12.0"
@@ -1300,9 +585,9 @@ beginObjectProperties
 major 4
 minor 1
 release 1
-x 330
-y 705
-w 55
+x 315
+y 555
+w 70
 h 20
 font "arial-bold-r-12.0"
 fontAlign "right"
@@ -1320,9 +605,9 @@ beginObjectProperties
 major 10
 minor 0
 release 0
-x 120
-y 705
-w 90
+x 130
+y 555
+w 180
 h 20
 controlPv "$(P)$(R)PhiStart"
 fgColor index 25
@@ -1339,7 +624,7 @@ major 4
 minor 1
 release 1
 x 10
-y 730
+y 580
 w 115
 h 20
 font "arial-bold-r-12.0"
@@ -1357,9 +642,9 @@ beginObjectProperties
 major 4
 minor 1
 release 1
-x 330
-y 730
-w 55
+x 315
+y 580
+w 70
 h 20
 font "arial-bold-r-12.0"
 fontAlign "right"
@@ -1377,9 +662,9 @@ beginObjectProperties
 major 10
 minor 0
 release 0
-x 120
-y 730
-w 90
+x 130
+y 580
+w 180
 h 20
 controlPv "$(P)$(R)PhiIncr"
 fgColor index 25
@@ -1396,7 +681,7 @@ major 4
 minor 1
 release 1
 x 10
-y 805
+y 655
 w 115
 h 20
 font "arial-bold-r-12.0"
@@ -1415,7 +700,7 @@ major 4
 minor 1
 release 1
 x 10
-y 830
+y 680
 w 115
 h 20
 font "arial-bold-r-12.0"
@@ -1433,9 +718,9 @@ beginObjectProperties
 major 4
 minor 1
 release 1
-x 330
-y 805
-w 55
+x 315
+y 655
+w 70
 h 20
 font "arial-bold-r-12.0"
 fontAlign "right"
@@ -1453,9 +738,9 @@ beginObjectProperties
 major 4
 minor 1
 release 1
-x 330
-y 830
-w 55
+x 315
+y 680
+w 70
 h 20
 font "arial-bold-r-12.0"
 fontAlign "right"
@@ -1473,9 +758,9 @@ beginObjectProperties
 major 10
 minor 0
 release 0
-x 120
-y 805
-w 90
+x 130
+y 655
+w 180
 h 20
 controlPv "$(P)$(R)OmegaStart"
 fgColor index 25
@@ -1491,9 +776,9 @@ beginObjectProperties
 major 10
 minor 0
 release 0
-x 120
-y 830
-w 90
+x 130
+y 680
+w 180
 h 20
 controlPv "$(P)$(R)OmegaIncr"
 fgColor index 25
@@ -2067,5 +1352,270 @@ bgColor index 10
 fill
 font "arial-bold-r-12.0"
 fontAlign "center"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 10
+y 430
+w 115
+h 20
+font "arial-bold-r-12.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Beam Centre:"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 315
+y 430
+w 70
+h 20
+font "arial-bold-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "pixels (X,Y)"
+}
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 130
+y 430
+w 85
+h 20
+controlPv "$(P)$(R)BeamX"
+fgColor index 25
+fgAlarm
+bgColor index 3
+fill
+font "arial-bold-r-12.0"
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 225
+y 430
+w 85
+h 20
+controlPv "$(P)$(R)BeamY"
+fgColor index 25
+fgAlarm
+bgColor index 3
+fill
+font "arial-bold-r-12.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 215
+y 430
+w 15
+h 20
+font "arial-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  ","
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 10
+y 405
+w 115
+h 20
+font "arial-bold-r-12.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Detector distance:"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 315
+y 405
+w 70
+h 20
+font "arial-bold-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "mm"
+}
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 130
+y 405
+w 180
+h 20
+controlPv "$(P)$(R)DetDist"
+fgColor index 25
+fgAlarm
+bgColor index 3
+fill
+font "arial-bold-r-12.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 10
+y 480
+w 115
+h 20
+font "arial-bold-r-12.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "2Theta increment:"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 315
+y 480
+w 70
+h 20
+font "arial-bold-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "deg"
+}
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 130
+y 480
+w 180
+h 20
+controlPv "$(P)$(R)TwoThetaIncr"
+fgColor index 25
+fgAlarm
+bgColor index 3
+fill
+font "arial-bold-r-12.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 10
+y 530
+w 115
+h 20
+font "arial-bold-r-12.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Kappa increment:"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 315
+y 530
+w 70
+h 20
+font "arial-bold-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "deg"
+}
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 130
+y 530
+w 180
+h 20
+controlPv "$(P)$(R)KappaIncr"
+fgColor index 25
+fgAlarm
+bgColor index 3
+fill
+font "arial-bold-r-12.0"
 endObjectProperties
 
