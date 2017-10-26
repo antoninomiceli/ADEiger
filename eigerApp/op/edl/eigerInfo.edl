@@ -3,10 +3,10 @@ beginScreenProperties
 major 4
 minor 0
 release 1
-x 2765
-y 297
-w 326
-h 260
+x 1310
+y 310
+w 328
+h 224
 font "arial-bold-r-12.0"
 ctlFont "arial-bold-r-12.0"
 btnFont "arial-bold-r-12.0"
@@ -34,7 +34,7 @@ release 0
 x 5
 y 10
 w 315
-h 240
+h 205
 lineColor index 14
 fill
 fillColor index 3
@@ -67,7 +67,7 @@ major 4
 minor 1
 release 1
 x 15
-y 165
+y 135
 w 115
 h 20
 font "arial-bold-r-12.0"
@@ -86,7 +86,7 @@ major 10
 minor 0
 release 0
 x 145
-y 190
+y 160
 w 165
 h 20
 controlPv "$(P)$(R)DCUBufferFree_RBV"
@@ -105,8 +105,8 @@ major 4
 minor 1
 release 1
 x 15
-y 190
-w 120
+y 160
+w 115
 h 20
 font "arial-bold-r-12.0"
 fgColor index 14
@@ -124,7 +124,7 @@ major 4
 minor 0
 release 0
 x 155
-y 170
+y 140
 w 10
 h 10
 controlPv "$(P)$(R)Link0_RBV"
@@ -142,7 +142,7 @@ major 4
 minor 0
 release 0
 x 200
-y 170
+y 140
 w 10
 h 10
 controlPv "$(P)$(R)Link1_RBV"
@@ -160,7 +160,7 @@ major 4
 minor 0
 release 0
 x 245
-y 170
+y 140
 w 10
 h 10
 controlPv "$(P)$(R)Link2_RBV"
@@ -178,7 +178,7 @@ major 4
 minor 0
 release 0
 x 290
-y 170
+y 140
 w 10
 h 10
 controlPv "$(P)$(R)Link3_RBV"
@@ -196,8 +196,8 @@ major 4
 minor 1
 release 1
 x 15
-y 215
-w 120
+y 185
+w 115
 h 20
 font "arial-bold-r-12.0"
 fgColor index 14
@@ -215,7 +215,7 @@ major 10
 minor 0
 release 0
 x 145
-y 215
+y 185
 w 165
 h 20
 controlPv "$(P)$(R)CountCutoff_RBV"
@@ -227,25 +227,6 @@ font "arial-bold-r-12.0"
 fontAlign "center"
 endObjectProperties
 
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 1
-x 15
-y 25
-w 120
-h 20
-font "arial-bold-r-12.0"
-fgColor index 14
-bgColor index 3
-useDisplayBg
-value {
-  "Asyn Port:"
-}
-endObjectProperties
-
 # (Textupdate)
 object TextupdateClass
 beginObjectProperties
@@ -253,7 +234,7 @@ major 10
 minor 0
 release 0
 x 145
-y 50
+y 25
 w 165
 h 20
 controlPv "$(P)$(R)Description_RBV"
@@ -272,7 +253,7 @@ major 4
 minor 1
 release 1
 x 15
-y 50
+y 25
 w 115
 h 20
 font "arial-bold-r-12.0"
@@ -291,8 +272,8 @@ major 4
 minor 1
 release 1
 x 15
-y 75
-w 120
+y 50
+w 115
 h 20
 font "arial-bold-r-12.0"
 fgColor index 14
@@ -310,26 +291,7 @@ major 10
 minor 0
 release 0
 x 145
-y 25
-w 165
-h 20
-controlPv "$(P)$(R)PortName_RBV"
-fgColor index 16
-fgAlarm
-bgColor index 10
-fill
-font "arial-bold-r-12.0"
-fontAlign "center"
-endObjectProperties
-
-# (Textupdate)
-object TextupdateClass
-beginObjectProperties
-major 10
-minor 0
-release 0
-x 145
-y 75
+y 50
 w 165
 h 20
 controlPv "$(P)$(R)SerialNumber_RBV"
@@ -348,8 +310,8 @@ major 4
 minor 1
 release 1
 x 15
-y 110
-w 125
+y 85
+w 115
 h 20
 font "arial-bold-r-12.0"
 fgColor index 14
@@ -367,7 +329,7 @@ major 10
 minor 0
 release 0
 x 145
-y 110
+y 85
 w 165
 h 20
 controlPv "$(P)$(R)SensorThickness_RBV"
@@ -386,8 +348,8 @@ major 4
 minor 1
 release 1
 x 15
-y 135
-w 120
+y 110
+w 115
 h 20
 font "arial-bold-r-12.0"
 fgColor index 14
@@ -405,7 +367,7 @@ major 10
 minor 0
 release 0
 x 145
-y 135
+y 110
 w 165
 h 20
 controlPv "$(P)$(R)SensorMaterial_RBV"
