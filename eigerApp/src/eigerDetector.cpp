@@ -27,7 +27,6 @@
 
 #include "ADDriver.h"
 #include "eigerDetector.h"
-#include "restApi.h"
 #include "streamApi.h"
 
 #define MAX_BUF_SIZE            256

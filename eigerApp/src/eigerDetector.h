@@ -4,7 +4,7 @@
 #include <map>
 #include <vector>
 
-#include "restApi.h"
+#include "eigerRestApi.h"
 #include "eigerParam.h"
 
 // areaDetector NDArray data source

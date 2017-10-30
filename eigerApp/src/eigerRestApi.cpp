@@ -1,4 +1,4 @@
-#include "restApi.h"
+#include "eigerRestApi.h"
 
 #include <stdexcept>
 
