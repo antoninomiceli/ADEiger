@@ -5,7 +5,7 @@
 #include <vector>
 
 #include "eigerRestApi.h"
-#include "eigerParam.h"
+#include "restParam.h"
 
 // areaDetector NDArray data source
 #define EigDataSourceStr           "DATA_SOURCE"
@@ -115,77 +115,77 @@ public:
 
 protected:
     // Driver-only parameters
-    EigerParam *mDataSource;
-    EigerParam *mFWAutoRemove;
-    EigerParam *mTrigger;
-    EigerParam *mTriggerExp;
-    EigerParam *mManualTrigger;
-    EigerParam *mArmed;
-    EigerParam *mSequenceId;
-    EigerParam *mPendingFiles;
-    EigerParam *mSaveFiles;
-    EigerParam *mFileOwner;
-    EigerParam *mFileOwnerGroup;
-    EigerParam *mFilePerms;
-    EigerParam *mMonitorTimeout;
+    RestParam *mDataSource;
+    RestParam *mFWAutoRemove;
+    RestParam *mTrigger;
+    RestParam *mTriggerExp;
+    RestParam *mManualTrigger;
+    RestParam *mArmed;
+    RestParam *mSequenceId;
+    RestParam *mPendingFiles;
+    RestParam *mSaveFiles;
+    RestParam *mFileOwner;
+    RestParam *mFileOwnerGroup;
+    RestParam *mFilePerms;
+    RestParam *mMonitorTimeout;
 
     // Eiger parameters: metadata
-    EigerParam *mDescription;
+    RestParam *mDescription;
 
     // Eiger parameters: acquisition
-    EigerParam *mWavelength;
-    EigerParam *mPhotonEnergy;
-    EigerParam *mThreshold;
-    EigerParam *mNTriggers;
-    EigerParam *mCompressionAlgo;
-    EigerParam *mROIMode;
-    EigerParam *mAutoSummation;
+    RestParam *mWavelength;
+    RestParam *mPhotonEnergy;
+    RestParam *mThreshold;
+    RestParam *mNTriggers;
+    RestParam *mCompressionAlgo;
+    RestParam *mROIMode;
+    RestParam *mAutoSummation;
 
     // Eiger parameters: status
-    EigerParam *mState;
-    EigerParam *mError;
-    EigerParam *mThTemp0;
-    EigerParam *mThHumid0;
-    EigerParam *mLink0;
-    EigerParam *mLink1;
-    EigerParam *mLink2;
-    EigerParam *mLink3;
-    EigerParam *mDCUBufFree;
+    RestParam *mState;
+    RestParam *mError;
+    RestParam *mThTemp0;
+    RestParam *mThHumid0;
+    RestParam *mLink0;
+    RestParam *mLink1;
+    RestParam *mLink2;
+    RestParam *mLink3;
+    RestParam *mDCUBufFree;
 
     // Eiger parameters: filewriter interface
-    EigerParam *mFWEnable;
-    EigerParam *mFWCompression;
-    EigerParam *mFWNamePattern;
-    EigerParam *mFWNImgsPerFile;
-    EigerParam *mFWImgNumStart;
-    EigerParam *mFWState;
-    EigerParam *mFWFree;
-    EigerParam *mFWClear;
+    RestParam *mFWEnable;
+    RestParam *mFWCompression;
+    RestParam *mFWNamePattern;
+    RestParam *mFWNImgsPerFile;
+    RestParam *mFWImgNumStart;
+    RestParam *mFWState;
+    RestParam *mFWFree;
+    RestParam *mFWClear;
 
     // Eiger parameters: monitor interface
-    EigerParam *mMonitorEnable;
-    EigerParam *mMonitorBufSize;
-    EigerParam *mMonitorState;
+    RestParam *mMonitorEnable;
+    RestParam *mMonitorBufSize;
+    RestParam *mMonitorState;
 
     // Eiger parameters: streaming interface
-    EigerParam *mStreamEnable;
-    EigerParam *mStreamDropped;
-    EigerParam *mStreamState;
+    RestParam *mStreamEnable;
+    RestParam *mStreamDropped;
+    RestParam *mStreamState;
 
     // Base class parameters
-    EigerParam *mAcquireTime;
-    EigerParam *mAcquirePeriod;
-    EigerParam *mNumImages;
-    EigerParam *mTriggerMode;
-    EigerParam *mFirmwareVersion;
-    EigerParam *mSerialNumber;
-    EigerParam *mTemperatureActual;
-    EigerParam *mNDArraySizeX;
-    EigerParam *mNDArraySizeY;
+    RestParam *mAcquireTime;
+    RestParam *mAcquirePeriod;
+    RestParam *mNumImages;
+    RestParam *mTriggerMode;
+    RestParam *mFirmwareVersion;
+    RestParam *mSerialNumber;
+    RestParam *mTemperatureActual;
+    RestParam *mNDArraySizeX;
+    RestParam *mNDArraySizeY;
 
 private:
     char mHostname[512];
-    RestAPI mApi;
+    EigerRestAPI mApi;
     epicsEvent mStartEvent, mStopEvent, mTriggerEvent, mStreamEvent, mStreamDoneEvent,
             mPollDoneEvent;
     epicsMessageQueue mPollQueue, mDownloadQueue, mParseQueue, mSaveQueue,
@@ -193,9 +193,13 @@ private:
     bool mPollStop, mPollComplete, mStreamComplete;
     unsigned int mFrameNumber;
     uid_t mFsUid, mFsGid;
-    EigerParamSet mParams;
+    RestParamSet mParams;
     int mFirstParam;
     std::map<std::string, sys_t> mSubSystemMap;
+
+    RestParam *createParam(
+          std::string const & asynName, asynParamType asynType,
+          sys_t subSystem = (sys_t)0, std::string const & name = "");
 
     // Read all parameters from detector and set some default values
     asynStatus initParams (void);

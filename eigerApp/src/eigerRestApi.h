@@ -1,14 +1,13 @@
-#ifndef REST_API_H
-#define REST_API_H
+#ifndef EIGER_REST_API_H
+#define EIGER_REST_API_H
 
+#include <map>
 #include <string>
 #include <epicsMutex.h>
 #include <osiSock.h>
 
-#define DEFAULT_TIMEOUT     20      // seconds
-
-#define MAX_CHANGED_PARAMS  32
-#define MAX_PARAM_NAME      64
+#include "restApi.h"
+#include "restParam.h"
 
 // Subsystems
 typedef enum
@@ -31,37 +30,20 @@ typedef enum
     SSCount,
 } sys_t;
 
-// Forward declarations
-typedef struct request  request_t;
-typedef struct response response_t;
-typedef struct socket   socket_t;
-
-class RestAPI
+class EigerRestAPI : public RestAPI
 {
 private:
-    std::string mHostname;
-    int mPort;
-    struct sockaddr_in mAddress;
-    size_t mNumSockets;
-    socket_t *mSockets;
-
-    int connect (socket_t *s);
-    int setNonBlock (socket_t *s, bool nonBlock);
-
-    int doRequest (const request_t *request, response_t *response, int timeout = DEFAULT_TIMEOUT);
-
     int getBlob (sys_t sys, const char *name, char **buf, size_t *bufSize, const char *accept);
 
 public:
     static const char *sysStr [SSCount];
+    int lookupAccessMode(
+            std::string subSystem, rest_access_mode_t &accessMode);
 
     static int buildMasterName (const char *pattern, int seqId, char *buf, size_t bufSize);
     static int buildDataName   (int n, const char *pattern, int seqId, char *buf, size_t bufSize);
 
-    RestAPI (std::string const & hostname, int port = 80, size_t numSockets=5);
-
-    int get (sys_t sys, std::string const & param, std::string & value, int timeout = DEFAULT_TIMEOUT);
-    int put (sys_t sys, std::string const & param, std::string const & value = "", std::string * reply = NULL, int timeout = DEFAULT_TIMEOUT);
+    EigerRestAPI (std::string const & hostname, int port = 80, size_t numSockets=5);
 
     int initialize (void);
     int arm        (int *sequenceId);

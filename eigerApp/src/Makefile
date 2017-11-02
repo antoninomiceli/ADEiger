@@ -11,6 +11,7 @@ USR_INCLUDES += $(HDF5_INCLUDE)
 USR_INCLUDES += $(ZMQ_INCLUDE)
 
 LIB_SRCS += eigerDetector.cpp
+LIB_SRCS += eigerRestApi.cpp
 LIB_SRCS += streamApi.cpp
 
 LIB_LIBS += restClient
