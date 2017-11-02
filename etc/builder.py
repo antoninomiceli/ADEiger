@@ -2,6 +2,7 @@ from iocbuilder import AutoSubstitution
 from iocbuilder.arginfo import makeArgInfo, Simple
 from iocbuilder.modules.asyn import Asyn, AsynPort, AsynIP
 from iocbuilder.modules.ADCore import ADCore, ADBaseTemplate, makeTemplateInstance, includesTemplates, NDDataTypes
+from iocbuilder.modules.restClient import restClient
 
 
 __all__ = ['eigerDetector']
@@ -12,8 +13,10 @@ class eigerDetectorTemplate(AutoSubstitution):
 
 
 class eigerDetector(AsynPort):
+
     """Create an eiger detector"""
-    Dependencies = (ADCore,)
+
+    Dependencies = (ADCore, restClient)
 
     # This tells xmlbuilder to use PORT instead of name as the row ID
     UniqueName = "PORT"
