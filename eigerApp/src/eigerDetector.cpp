@@ -1715,10 +1715,10 @@ asynStatus eigerDetector::eigerStatus (void)
             status |= mLink2->fetch();
             status |= mLink3->fetch();
         }
-    }
 
-    // Read DCU buffer free percentage
-    status |= mDCUBufFree->fetch();
+        // Read DCU buffer free percentage
+        status |= mDCUBufFree->fetch();
+    }
 
     // Read state of the different modules
     status |= mState->fetch();
